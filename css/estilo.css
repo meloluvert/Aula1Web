@@ -1,0 +1,21 @@
+h1{
+    color: #228b22;
+}
+#page1{
+    color: lavenderblush;
+}
+.page2{
+    color: khaki;
+}
+
+*{
+    text-justify: justify;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*li dentro do ul demntro de body*/
+body ul li{
+    color: rgb(44, 44, 44);
+
+}
