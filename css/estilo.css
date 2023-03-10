@@ -1,21 +1,72 @@
-h1{
+body{
+    background-color: rgb(31, 29, 29);
+    color: #fff;
+    font: italic bold 2rem, sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    margin:0.5%;
+    
+}
+h1.titulo{
     color: #228b22;
+    text-align: center;
+    display: block;
+    margin: 1% auto;
+    
+}
+
+/*border: width style color*/
+
+.titulo{
+    display:none;
+    text-transform: uppercase;
+    text-shadow: 0.09em 0.1rem 0.1rem rgb(35, 82, 0);
 }
 #page1{
-    color: lavenderblush;
+    color: rgb(196, 40, 92);
 }
 .page2{
     color: khaki;
 }
 
-*{
-    text-justify: justify;
-    margin: auto;
-    font-family: 'Courier New', Courier, monospace;
+p{
+    text-align: justify;
+    text-indent: 4rem;
+    border: 0.1rem double #fff;
+    border-radius: 5% 0;
+    padding: 3%;
+    display: block;
+    margin: 1%;
+    word-spacing: 0.1em;
+    
+    
 }
-
 /*li dentro do ul demntro de body*/
-body ul li{
-    color: rgb(44, 44, 44);
-
+body ul {
+    display: block;
+    margin: 3%;
+}
+ol{display: inline-block;
+     list-style-type:armenian; 
+     padding-left: 10%;
+}
+ul{
+    list-style-type: square;
+}
+a{
+    display: inline-block;
+    margin: 0.1em;
+    color: #fff;
+    
+}
+a:hover{
+    color: #228b22;
+    text-decoration: none;
+}
+span{text-decoration: line-through;}
+img{display: inline-block; width: 100%;}
+section{
+    height: 20vh;
+    background-color: blue;
+    
 }
