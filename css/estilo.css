@@ -1,35 +1,38 @@
-body{
-    background-color: rgb(31, 29, 29);
+body {
+    background-color: #1f1d1d;
     color: #fff;
-    font: italic bold 2rem, sans-serif ;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    margin:0.5%;
-    
+    font: lighter small-caps 300 1em sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    clear: none;
 }
-h1.titulo{
+
+h1.titulo {
     color: #228b22;
     text-align: center;
     display: block;
     margin: 1% auto;
-    
+    font-size: 3em;
+
 }
-
 /*border: width style color*/
-
-.titulo{
-    display:none;
+/* Títulos=*/
+.titulo {
+    display: none;
     text-transform: uppercase;
     text-shadow: 0.09em 0.1rem 0.1rem rgb(35, 82, 0);
 }
-#page1{
+
+#page1 {
     color: rgb(196, 40, 92);
 }
-.page2{
+
+.page2 {
     color: khaki;
 }
 
-p{
+/* Elementos gerais */
+p {
     text-align: justify;
     text-indent: 4rem;
     border: 0.1rem double #fff;
@@ -38,35 +41,117 @@ p{
     display: block;
     margin: 1%;
     word-spacing: 0.1em;
-    
-    
+    line-height: 1.4em;
+    letter-spacing: 1px;
 }
+
 /*li dentro do ul demntro de body*/
 body ul {
     display: block;
     margin: 3%;
 }
-ol{display: inline-block;
-     list-style-type:armenian; 
-     padding-left: 10%;
+ol {
+    display: inline-block;
+    list-style-type: armenian;
+    padding-left: 10%;
 }
-ul{
+
+ul {
     list-style-type: square;
+    float: right;
 }
-a{
+
+a {
     display: inline-block;
     margin: 0.1em;
     color: #fff;
-    
+
 }
-a:hover{
+
+a:hover {
     color: #228b22;
     text-decoration: none;
 }
-span{text-decoration: line-through;}
-img{display: inline-block; width: 100%;}
-section{
-    height: 20vh;
-    background-color: blue;
-    
+
+span {
+    text-decoration: line-through;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+}
+
+/* especificidade */
+.floatbutton {
+    display: block;
+    width: 5vh;
+    height: 5vh;
+    position: fixed;
+    right: 4vh;
+    bottom: 2vh;
+    z-index: 3;
+
+}
+
+.discord img {
+    background: #455797;
+    padding: 23%;
+    border-radius: 50%;
+    border: #fff 2px solid;
+
+
+}
+
+p.aviso {
+    border: 0;
+}
+
+section.imgescondida {
+    width: 100%;
+    background: fixed url(../img/background.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+/*usando grid*/
+section.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5em;
+
+}
+
+section.grid article {
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    color: #1f1d1d;
+}
+
+/*usndo o flexbox*/
+section.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section.flexbox article {
+    display: block;
+    background-color: #fff;
+    border-radius: 5%;
+    color: #1f1d1d;
+    margin: 1%;
 }
